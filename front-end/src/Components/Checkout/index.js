@@ -60,101 +60,104 @@ const Checkout = () => {
   }, [newCart]);
 
   return (
-    <div>
+    <>
       <MenuBar titleName="Finalizar Pedido" />
-      <h2>Produtos</h2>
-      {cart.length < 1 && <h2>Não há produtos no carrinho</h2>}
-      {cart.map(({
-        price = zero,
-        productName,
-        quantity,
-        imageURL,
-      }, index) => (
-        <div className="cart-products" key={ productName }>
-          <div className="container">
-            <div>
-              <img className="cart-img" src={ require(`../../mockImages/${imageURL}`) } alt={ productName } />
-            </div>
-            <div>
-              <div className="cart-name" data-testid={ `${index}-product-name` }>{ productName }</div>
-              <div className="cart-qtd" data-testid={ `${index}-product-qtd-input` }>{ quantity }</div>
-            </div>
-          </div>
-
-          <div className="container">
-            <div>
-              <div className="cart-total" data-testid={ `${index}-product-total-value` }>
-                { formatePrice(quantity * price) }
+      <div className="checkout-container">
+        <h2>Produtos</h2>
+        {cart.length < 1 && <h2>Não há produtos no carrinho</h2>}
+        {cart.map(({
+          price = zero,
+          productName,
+          quantity,
+          imageURL,
+        }, index) => (
+          <div className="cart-products" key={ productName }>
+            <div className="container">
+              <div>
+                <img className="cart-img" src={ require(`../../mockImages/${imageURL}`) } alt={ productName } />
               </div>
-              <div className="cart-price" data-testid={ `${index}-product-unit-price` }>
-                { `(${formatePrice(price)} un)` }
+              <div>
+                <div className="cart-name" data-testid={ `${index}-product-name` }>{ productName }</div>
+                <div className="cart-qtd" data-testid={ `${index}-product-qtd-input` }>{ quantity }</div>
               </div>
             </div>
-            <div className="btn-x">
-              <button
-                type="submit"
-                value="Submit"
-                data-testid={ `${index}-removal-button` }
-                onClick={ () => removeOrder(index) }
-              >
-                X
-              </button>
-            </div>
-          </div>
 
+            <div className="container">
+              <div>
+                <div className="cart-total" data-testid={ `${index}-product-total-value` }>
+                  { formatePrice(quantity * price) }
+                </div>
+                <div className="cart-price" data-testid={ `${index}-product-unit-price` }>
+                  { `(${formatePrice(price)} un)` }
+                </div>
+              </div>
+              <div className="btn-x">
+                <button
+                  type="submit"
+                  value="Submit"
+                  data-testid={ `${index}-removal-button` }
+                  onClick={ () => removeOrder(index) }
+                >
+                  X
+                </button>
+              </div>
+            </div>
+
+          </div>
+        )) }
+
+        <div className="order-total-value" data-testid="order-total-value">
+          { `Total: ${totalPrice}` }
         </div>
-      )) }
 
-      <div className="order-total-value" data-testid="order-total-value">
-        { `Total: ${totalPrice}` }
-      </div>
+        <h2>Endereço</h2>
 
-      <h2>Endereço</h2>
-
-      <div className="form">
-        <label htmlFor="street">
-          Rua:
-          <input
-            id="street"
-            name="street"
-            data-testid="checkout-street-input"
-            type="text"
-            required
-            onChange={ (e) => setNameAdress(e.target.value) }
-            value={ nameAdress }
-          />
-        </label>
-        <label htmlFor="number">
-          Número da casa:
-          <input
-            id="number"
-            name="number"
-            data-testid="checkout-house-number-input"
-            type="text"
-            required
-            onChange={ (e) => setNumberAdress(e.target.value) }
-            value={ numberAdress }
-          />
-        </label>
-      </div>
-      <button
-        type="button"
-        className="btn-finish"
-        data-testid="checkout-finish-btn"
-        disabled={ disableButtton(justNumberPrice, nameAdress, numberAdress) }
-        onClick={ () => sendNewOrder(nameAdress, numberAdress, cart, user, justNumberPrice) }
-      >
-        Finalizar Pedido
-      </button>
-      { message && <p>{message}</p> }
-      { message && goToProducts()}
-      <div>
-        <a href="https://stories.freepik.com/business">
-          <img className="delivery-img" src={ Delivery } alt="delivery" />
-        </a>
+        <div className="form">
+          <label htmlFor="street">
+            Rua:
+            <input
+              id="street"
+              name="street"
+              data-testid="checkout-street-input"
+              type="text"
+              required
+              onChange={ (e) => setNameAdress(e.target.value) }
+              value={ nameAdress }
+            />
+          </label>
+          <label htmlFor="number">
+            Número da casa:
+            <input
+              id="number"
+              name="number"
+              data-testid="checkout-house-number-input"
+              type="text"
+              required
+              onChange={ (e) => setNumberAdress(e.target.value) }
+              value={ numberAdress }
+            />
+          </label>
+        </div>
+        <button
+          type="button"
+          className="btn-finish"
+          data-testid="checkout-finish-btn"
+          disabled={ disableButtton(justNumberPrice, nameAdress, numberAdress) }
+          onClick={ () => sendNewOrder(nameAdress, numberAdress, cart, user, justNumberPrice) }
+        >
+          Finalizar Pedido
+        </button>
+        { message && <p>{message}</p> }
+        { message && goToProducts()}
+        <div>
+          <a href="https://stories.freepik.com/business">
+            <img className="delivery-img" src={ Delivery } alt="delivery" width="100px"/>
+          </a>
+        </div>
+      
       </div>
       <Footer />
-    </div>
+    </>
   );
 };
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import BeerProvider from '../Context/BeerContext/BeerProvider';
 import {
   register,
@@ -15,7 +15,7 @@ import {
 } from '../pages';
 
 const Routes = () => (
-  <BrowserRouter>
+  <HashRouter>
     <Switch>
       <Route exact path="/" component={ login } />
       <Route exact path="/login" component={ login } />
@@ -31,7 +31,7 @@ const Routes = () => (
         <Route exact path="/admin/profile" component={ adminProfile } />
       </BeerProvider>
     </Switch>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default Routes;
