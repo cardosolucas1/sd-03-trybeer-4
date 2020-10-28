@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/sd-03-trybeer-4/static/css/main.d27b784f.chunk.css",
-    "main.js": "/sd-03-trybeer-4/static/js/main.a3c20775.chunk.js",
-    "main.js.map": "/sd-03-trybeer-4/static/js/main.a3c20775.chunk.js.map",
+    "main.css": "/sd-03-trybeer-4/static/css/main.72853df7.chunk.css",
+    "main.js": "/sd-03-trybeer-4/static/js/main.85d714f0.chunk.js",
+    "main.js.map": "/sd-03-trybeer-4/static/js/main.85d714f0.chunk.js.map",
     "runtime-main.js": "/sd-03-trybeer-4/static/js/runtime-main.38ce141d.js",
     "runtime-main.js.map": "/sd-03-trybeer-4/static/js/runtime-main.38ce141d.js.map",
     "static/js/2.78bf7c3f.chunk.js": "/sd-03-trybeer-4/static/js/2.78bf7c3f.chunk.js",
     "static/js/2.78bf7c3f.chunk.js.map": "/sd-03-trybeer-4/static/js/2.78bf7c3f.chunk.js.map",
     "index.html": "/sd-03-trybeer-4/index.html",
-    "precache-manifest.f5fc13d6d61955c5b7a39fface6cbc76.js": "/sd-03-trybeer-4/precache-manifest.f5fc13d6d61955c5b7a39fface6cbc76.js",
+    "precache-manifest.82ef27814da01e22fe9ce8085d4033c5.js": "/sd-03-trybeer-4/precache-manifest.82ef27814da01e22fe9ce8085d4033c5.js",
     "service-worker.js": "/sd-03-trybeer-4/service-worker.js",
-    "static/css/main.d27b784f.chunk.css.map": "/sd-03-trybeer-4/static/css/main.d27b784f.chunk.css.map",
+    "static/css/main.72853df7.chunk.css.map": "/sd-03-trybeer-4/static/css/main.72853df7.chunk.css.map",
     "static/js/2.78bf7c3f.chunk.js.LICENSE.txt": "/sd-03-trybeer-4/static/js/2.78bf7c3f.chunk.js.LICENSE.txt",
     "static/media/Antarctica Pilsen 300ml.jpg": "/sd-03-trybeer-4/static/media/Antarctica Pilsen 300ml.442dc327.jpg",
     "static/media/Brahma 600ml.jpg": "/sd-03-trybeer-4/static/media/Brahma 600ml.f6531ee0.jpg",
@@ -30,7 +30,7 @@
   "entrypoints": [
     "static/js/runtime-main.38ce141d.js",
     "static/js/2.78bf7c3f.chunk.js",
-    "static/css/main.d27b784f.chunk.css",
-    "static/js/main.a3c20775.chunk.js"
+    "static/css/main.72853df7.chunk.css",
+    "static/js/main.85d714f0.chunk.js"
   ]
 }
