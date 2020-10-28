@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sd-03-trybeer-4/static/css/main.8a74550c.chunk.css",
+    "main.css": "/sd-03-trybeer-4/static/css/main.2f5c37af.chunk.css",
     "main.js": "/sd-03-trybeer-4/static/js/main.85d714f0.chunk.js",
     "main.js.map": "/sd-03-trybeer-4/static/js/main.85d714f0.chunk.js.map",
     "runtime-main.js": "/sd-03-trybeer-4/static/js/runtime-main.38ce141d.js",
@@ -8,9 +8,9 @@
     "static/js/2.78bf7c3f.chunk.js": "/sd-03-trybeer-4/static/js/2.78bf7c3f.chunk.js",
     "static/js/2.78bf7c3f.chunk.js.map": "/sd-03-trybeer-4/static/js/2.78bf7c3f.chunk.js.map",
     "index.html": "/sd-03-trybeer-4/index.html",
-    "precache-manifest.d3b240c8f8ee7d3138bccf384ca20da2.js": "/sd-03-trybeer-4/precache-manifest.d3b240c8f8ee7d3138bccf384ca20da2.js",
+    "precache-manifest.c31a0010e767bc694f557cba10e8a585.js": "/sd-03-trybeer-4/precache-manifest.c31a0010e767bc694f557cba10e8a585.js",
     "service-worker.js": "/sd-03-trybeer-4/service-worker.js",
-    "static/css/main.8a74550c.chunk.css.map": "/sd-03-trybeer-4/static/css/main.8a74550c.chunk.css.map",
+    "static/css/main.2f5c37af.chunk.css.map": "/sd-03-trybeer-4/static/css/main.2f5c37af.chunk.css.map",
     "static/js/2.78bf7c3f.chunk.js.LICENSE.txt": "/sd-03-trybeer-4/static/js/2.78bf7c3f.chunk.js.LICENSE.txt",
     "static/media/Antarctica Pilsen 300ml.jpg": "/sd-03-trybeer-4/static/media/Antarctica Pilsen 300ml.442dc327.jpg",
     "static/media/Brahma 600ml.jpg": "/sd-03-trybeer-4/static/media/Brahma 600ml.f6531ee0.jpg",
@@ -30,7 +30,7 @@
   "entrypoints": [
     "static/js/runtime-main.38ce141d.js",
     "static/js/2.78bf7c3f.chunk.js",
-    "static/css/main.8a74550c.chunk.css",
+    "static/css/main.2f5c37af.chunk.css",
     "static/js/main.85d714f0.chunk.js"
   ]
 }
