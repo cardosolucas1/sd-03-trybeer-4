@@ -1,95 +1,104 @@
 const axios = require('axios');
+const {
+  getOrderListMock,
+  getOrdersMock,
+  getProductsMock,
+  createUserMockReturn,
+  loginUserMock,
+  postUpdateUserMock,
+  postNewOrderMock,
+} = require('./mock');
 
 const url = 'http://localhost:3001/';
 
 export const getUserFromAPI = async (email, password) => {
-  const response = await axios({
-    baseURL: `${url}login`,
-    method: 'post',
-    data: {
-      email,
-      password,
-    },
-  })
-    .catch(({ err }) => err);
+  // const response = await axios({
+  //   baseURL: `${url}login`,
+  //   method: 'post',
+  //   data: {
+  //     email,
+  //     password,
+  //   },
+  // })
+  //   .catch(({ err }) => err);
 
-  return response;
+  return loginUserMock();
 };
 
 export const postNewUserAPI = async (name, email, password, seller) => {
-  const dataResponse = await axios({
-    baseURL: `${url}register`,
-    method: 'post',
-    data: {
-      name,
-      email,
-      password,
-      seller,
-    },
-  })
-    .then((resp) => resp.data)
-    .catch(({ response }) => response.data);
+  // const dataResponse = await axios({
+  //   baseURL: `${url}register`,
+  //   method: 'post',
+  //   data: {
+  //     name,
+  //     email,
+  //     password,
+  //     seller,
+  //   },
+  // })
+  //   .then((resp) => resp.data)
+  //   .catch(({ response }) => response.data);
 
-  return dataResponse;
+  return createUserMockReturn();
 };
 
 export const postUpdateName = async (name, email, token) => {
-  const response = await axios({
-    baseURL: `${url}profile`,
-    method: 'post',
-    headers: {
-      authorization: token,
-    },
-    data: {
-      name,
-      email,
-    },
-  })
-    .then((resp) => resp.data)
-    .catch(({ err }) => err);
+  // const response = await axios({
+  //   baseURL: `${url}profile`,
+  //   method: 'post',
+  //   headers: {
+  //     authorization: token,
+  //   },
+  //   data: {
+  //     name,
+  //     email,
+  //   },
+  // })
+  //   .then((resp) => resp.data)
+  //   .catch(({ err }) => err);
 
-  return response;
+  return postUpdateUserMock(name, email);
 };
 
 export const getProductsFromAPI = async (token) => {
-  const response = await axios({
-    baseURL: `${url}products`,
-    method: 'get',
-    headers: {
-      authorization: token,
-    },
-  })
-    .then((resp) => resp.data)
-    .catch(({ err }) => err);
+  // const response = await axios({
+  //   baseURL: `${url}products`,
+  //   method: 'get',
+  //   headers: {
+  //     authorization: token,
+  //   },
+  // })
+  //   .then((resp) => resp.data)
+  //   .catch(({ err }) => err);
 
-  return response;
+  return getProductsMock();
 };
 
 export const getOrdersFromAPI = async (token) => {
-  const response = await axios({
-    baseURL: `${url}orders`,
-    method: 'get',
-    headers: {
-      authorization: token,
-    },
-  })
-    .then((res) => res.data)
-    .catch(({ err }) => err);
+  // const response = await axios({
+  //   baseURL: `${url}orders`,
+  //   method: 'get',
+  //   headers: {
+  //     authorization: token,
+  //   },
+  // })
+  //   .then((res) => res.data)
+  //   .catch(({ err }) => err);
 
-  return response;
+  return getOrdersMock();
 };
 
 export const getOrderList = async (token) => {
-  const orders = await axios({
-    baseURL: `${url}admin/orders`,
-    method: 'get',
-    headers: {
-      authorization: token,
-    },
-  })
-    .then((result) => result.data)
-    .catch(({ err }) => err);
-  return orders;
+  // const orders = await axios({
+  //   baseURL: `${url}admin/orders`,
+  //   method: 'get',
+  //   headers: {
+  //     authorization: token,
+  //   },
+  // })
+  //   .then((result) => result.data)
+  //   .catch(({ err }) => err);
+  return getOrderListMock();
 };
 
 export const getOrderData = async (id) => {
@@ -110,18 +119,18 @@ export const markOrderAsDelivered = async (id) => {
 };
 
 export const postNewOrder = async (nameAdress, numberAdress, cart, user, justNumberPrice) => {
-  const response = await axios({
-    baseURL: `${url}orders`,
-    method: 'post',
-    data: {
-      nameAdress,
-      numberAdress,
-      cart,
-      user,
-      justNumberPrice,
-    },
-  })
-    .catch(({ err }) => err);
+  // const response = await axios({
+  //   baseURL: `${url}orders`,
+  //   method: 'post',
+  //   data: {
+  //     nameAdress,
+  //     numberAdress,
+  //     cart,
+  //     user,
+  //     justNumberPrice,
+  //   },
+  // })
+  //   .catch(({ err }) => err);
 
-  return response;
+  return postNewOrderMock();
 };

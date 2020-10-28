@@ -92,17 +92,6 @@ const RegisterUser = () => {
             />
           </label>
           <br />
-          <label htmlFor="userSeller">
-            Quero Vender
-            <input
-              type="checkbox"
-              name="seller"
-              id="userSeller"
-              data-testid="signup-seller"
-              onChange={ () => handleInput('seller') }
-            />
-          </label>
-          <br />
           <button
             onClick={ () => createNewUser() }
             className="confirm-btn"

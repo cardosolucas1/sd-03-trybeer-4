@@ -4,14 +4,21 @@
   color: #f2f2f2;
   display: flex;
   flex-wrap: wrap;
+  margin: 0 !important;
   justify-content: space-around;
   width: 100%;
 }
 
-@media screen and ( min-width: 500px ) {
+@media screen and ( min-width: 500px ) and ( min-height: 800px) {
   .footer-container {
+    position: absolute;
     bottom: 0;
   }
+}
+
+.footer-container div {
+  max-width: 200px;
+  width: 60%;
 }
 
 div > p {

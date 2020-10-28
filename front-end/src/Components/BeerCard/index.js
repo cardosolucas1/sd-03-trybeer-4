@@ -10,6 +10,7 @@ import {
   getProductsLocalStorage,
 } from '../../utils/localStorage';
 
+
 const BeerCard = ({
   id,
   productName,
@@ -84,7 +85,7 @@ const BeerCard = ({
       <div className="product-img">
         <img
           data-testid={ `${index}-product-img` }
-          src={ imageURL }
+          src={require(`../../mockImages/${imageURL}`)}
           alt={ `imagem de um ${productName}` }
           width="100px"
         />

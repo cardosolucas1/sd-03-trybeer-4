@@ -11,7 +11,7 @@
   animation-play-state: paused;
   border-radius: 10% 2px;
   border-right: 0 solid #f2f2f2;
-  margin: 100px auto;
+  margin: 200px auto;
   max-width: 300px;
   padding: 150px 50px;
   text-align: center;
@@ -38,7 +38,7 @@
   width: 500px;
 }
 
-.form input {
+.forms input {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #f2f2f2;
