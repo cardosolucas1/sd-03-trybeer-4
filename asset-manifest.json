@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/sd-03-trybeer-4/static/css/main.d27b784f.chunk.css",
+    "main.js": "/sd-03-trybeer-4/static/js/main.a3c20775.chunk.js",
+    "main.js.map": "/sd-03-trybeer-4/static/js/main.a3c20775.chunk.js.map",
+    "runtime-main.js": "/sd-03-trybeer-4/static/js/runtime-main.38ce141d.js",
+    "runtime-main.js.map": "/sd-03-trybeer-4/static/js/runtime-main.38ce141d.js.map",
+    "static/js/2.78bf7c3f.chunk.js": "/sd-03-trybeer-4/static/js/2.78bf7c3f.chunk.js",
+    "static/js/2.78bf7c3f.chunk.js.map": "/sd-03-trybeer-4/static/js/2.78bf7c3f.chunk.js.map",
+    "index.html": "/sd-03-trybeer-4/index.html",
+    "precache-manifest.f5fc13d6d61955c5b7a39fface6cbc76.js": "/sd-03-trybeer-4/precache-manifest.f5fc13d6d61955c5b7a39fface6cbc76.js",
+    "service-worker.js": "/sd-03-trybeer-4/service-worker.js",
+    "static/css/main.d27b784f.chunk.css.map": "/sd-03-trybeer-4/static/css/main.d27b784f.chunk.css.map",
+    "static/js/2.78bf7c3f.chunk.js.LICENSE.txt": "/sd-03-trybeer-4/static/js/2.78bf7c3f.chunk.js.LICENSE.txt",
+    "static/media/Antarctica Pilsen 300ml.jpg": "/sd-03-trybeer-4/static/media/Antarctica Pilsen 300ml.442dc327.jpg",
+    "static/media/Brahma 600ml.jpg": "/sd-03-trybeer-4/static/media/Brahma 600ml.f6531ee0.jpg",
+    "static/media/Heineken 600ml.jpg": "/sd-03-trybeer-4/static/media/Heineken 600ml.fe16cc3f.jpg",
+    "static/media/Skol 269ml.jpg": "/sd-03-trybeer-4/static/media/Skol 269ml.4a08a727.jpg",
+    "static/media/Skol Beats Senses 269ml.jpg": "/sd-03-trybeer-4/static/media/Skol Beats Senses 269ml.8c5ebf5b.jpg",
+    "static/media/Skol Beats Senses 313ml.jpg": "/sd-03-trybeer-4/static/media/Skol Beats Senses 313ml.9fb748e3.jpg",
+    "static/media/Skol Lata 350ml.jpg": "/sd-03-trybeer-4/static/media/Skol Lata 350ml.c43788d3.jpg",
+    "static/media/Stella Artois 275ml.jpg": "/sd-03-trybeer-4/static/media/Stella Artois 275ml.bcb9cd6a.jpg",
+    "static/media/styles.css": "/sd-03-trybeer-4/static/media/bg-card-orders.47c8dfcd.png",
+    "static/media/delivery.png": "/sd-03-trybeer-4/static/media/delivery.49d05f58.png",
+    "static/media/facebook.png": "/sd-03-trybeer-4/static/media/facebook.eaeafd7c.png",
+    "static/media/friends.png": "/sd-03-trybeer-4/static/media/friends.7453ea81.png",
+    "static/media/instagram.png": "/sd-03-trybeer-4/static/media/instagram.129085e2.png",
+    "static/media/whatsapp.png": "/sd-03-trybeer-4/static/media/whatsapp.1907717c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.38ce141d.js",
+    "static/js/2.78bf7c3f.chunk.js",
+    "static/css/main.d27b784f.chunk.css",
+    "static/js/main.a3c20775.chunk.js"
+  ]
+}
